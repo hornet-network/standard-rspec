@@ -34,4 +34,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "lint_roller", ">= 1.0"
   spec.add_dependency "rubocop-rspec", "~> 3.5.0"
   spec.add_dependency "rubocop-factory_bot", ">= 2.22"
+  spec.add_dependency "rubocop-rspec_rails"
+  spec.add_dependency "rubocop-capybara"
 end
