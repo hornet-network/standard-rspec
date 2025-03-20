@@ -31,7 +31,7 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "lint_roller", "~> 1.0"
-  spec.add_dependency "rubocop-rspec", "~> 2.22.0"
-  spec.add_dependency "rubocop-factory_bot", "~> 2.22"
+  spec.add_dependency "lint_roller", ">= 1.0"
+  spec.add_dependency "rubocop-rspec", ">= 2.22.0"
+  spec.add_dependency "rubocop-factory_bot", ">= 2.22"
 end
