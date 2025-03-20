@@ -1024,14 +1024,6 @@ Capybara/CurrentPathExpectation:
   VersionChanged: '2.0'
   StyleGuide: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/Capybara/CurrentPathExpectation
 
-Capybara/FeatureMethods:
-  Description: Checks for consistent method usage in feature specs.
-  Enabled: true
-  EnabledMethods: []
-  VersionAdded: '1.17'
-  VersionChanged: '2.0'
-  StyleGuide: https://www.rubydoc.info/gems/rubocop-rspec/RuboCop/Cop/Capybara/FeatureMethods
-
 Capybara/VisibilityMatcher:
   Description: Checks for boolean visibility in capybara finders.
   Enabled: true
