@@ -10,10 +10,16 @@ module Standard::Rspec
 
       result = subject.rules(LintRoller::Context.new)
 
+      rules_value = begin
+        YAML.load_file(Pathname.new(__dir__).join("../../../config/base.yml"), aliases: true)
+      rescue ArgumentError
+        YAML.load_file(Pathname.new(__dir__).join("../../../config/base.yml"))
+      end
+
       assert_equal(LintRoller::Rules.new(
         type: :object,
         config_format: :rubocop,
-        value: YAML.load_file(Pathname.new(__dir__).join("../../../config/base.yml"), aliases: true)
+        value: rules_value
       ), result)
     end
   end
