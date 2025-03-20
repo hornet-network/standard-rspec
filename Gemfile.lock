@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    standard-rspec (0.2.3)
+    standard-rspec (0.3.0)
       lint_roller (>= 1.0)
       rubocop-capybara
       rubocop-factory_bot (>= 2.22)
